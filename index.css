@@ -1,0 +1,29 @@
+
+
+.cat{   
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute; 
+    animation-name: MoveCat;    /*動畫名稱，需與 keyframe 名稱對應*/
+    animation-duration: 4s;    /*動畫持續時間，單位為秒*/
+    animation-delay: 2s;    /*動畫延遲開始時間*/
+    animation-iteration-count: infinite;    /*動畫次數，infinite 為無限次*/    
+}
+
+
+/* 關鍵影格(@keyframe) , 寫在外面*/
+@keyframes MoveCat {    
+    0% { left: 0; }
+    25% { left: 20%; }
+    50% { left: 40%; }
+    75% { left: 60%; }
+    100% { left: 80%; }
+}
+
+/*簡單寫法*/
+@keyframes MoveCat {
+    from { left: 0; } 
+    to { left: 80%; }
+}
+
